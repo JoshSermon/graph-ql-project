@@ -1,0 +1,25 @@
+{
+  "name": "graph-ql-project",
+  "version": "1.0.0",
+  "description": "graph-ql-project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JoshSermon/graph-ql-project.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JoshSermon/graph-ql-project/issues"
+  },
+  "homepage": "https://github.com/JoshSermon/graph-ql-project#readme",
+  "dependencies": {
+    "apollo-server": "^3.12.1",
+    "graphql": "^16.8.1",
+    "nodemon": "^3.0.1"
+  }
+}

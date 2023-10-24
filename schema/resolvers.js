@@ -23,6 +23,21 @@ const resolvers = {
             return movie;
         },
     },
+   User: {
+       favoriteMovies: () => {
+           return _.filter(MovieList, (movie) => movie.year >= 2000 && movie.year <= 2010);
+       },
+   },
+        // MUTATION RESOLVERS
+        Mutation: {
+           createUser: (parent, args) => {
+               const user = args.input
+               const lastId = UserList[UserList.length-1].id
+               user.id = lastId + 1;
+               UserList.push(user);
+               return user;
+           } 
+        }
 
 };
 
